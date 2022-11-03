@@ -9,9 +9,9 @@ class LocationDetail extends StatelessWidget {
         appBar: AppBar(
           title: Text('Location Detail'),
         ),
-        body: Column(
-          mainAxisAlignment: MainAxisAlignment.start,
-          crossAxisAlignment: CrossAxisAlignment.stretch,
+        body: ListView(
+          scrollDirection: Axis.vertical,
+          shrinkWrap: true,
           children: [
             ImageBanner("assets/images/kiyomizu-dera.jpg"),
             TextSection("Summary",
